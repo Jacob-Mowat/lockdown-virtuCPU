@@ -3,10 +3,15 @@
 //
 
 #include <iostream>
+#include "Memory.h"
 
 using namespace std;
+using namespace VIRTU_CPU
 
 int main(int argc, char **argv) {
     cout << "Starting virtuCPU" << endl;
+
+    // TODO: eventual.
+
     return 0;
 }
