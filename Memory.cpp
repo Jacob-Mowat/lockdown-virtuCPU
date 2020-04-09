@@ -21,7 +21,9 @@ VIRTU_CPU::Memory::~Memory() {
 }
 
 void VIRTU_CPU::Memory::clear() {
-
+    for (unsigned char i = 0; i < this->c_maxAddr; i++) {
+        this->m_memSpc[i] = 0;
+    }
 }
 
 const unsigned char& VIRTU_CPU::Memory::read(const unsigned char& p_addr) {
